@@ -110,7 +110,7 @@ function install_kernel() {
 
    # Instead of retriving the lastest kernel & headers
   [ "X$FORCE_KERNEL" == "X" ] && {
-    apt-get -y --force-yes install raspberrypi-kernel-headers raspberrypi-kernel
+    apt-get -y install raspberrypi-kernel-headers raspberrypi-kernel
   } || {
     # We would like to a fixed version
     KERN_NAME=raspberrypi-kernel_${FORCE_KERNEL}_armhf.deb
